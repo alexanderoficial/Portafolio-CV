@@ -27,7 +27,7 @@
         orange,black,#a400ff,orangered);
    background-clip: text;
    color: transparent;
-   
+   animation: vista 1s ease-in-out;
  
 }
 .resumen h2{
