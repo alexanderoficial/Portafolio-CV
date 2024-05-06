@@ -379,7 +379,7 @@ button{
         #8f00ff,black,yellow,orangered);
    background-clip: text;
    color: transparent;
-    animation: espe 5s linear infinite;
+   animation: vista 2s ease-in-out;
 }
 @keyframes espe {
    to{
