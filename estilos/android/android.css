@@ -1,0 +1,325 @@
+@media (min-width: 1024px) and (max-width: 1350px) {
+   #perfil-x{
+       display: none;
+   }
+   
+   #container-perfil{
+      left: 15%;
+     
+   }
+   #barra-navegacion{
+      left: 0;
+  }
+   #container-vista {
+    position: absolute;
+    width: 55%;
+    height: 80vh;
+    background: white;
+    top: 70px;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 20px;
+    animation: vista 1s ease-in-out;
+    box-shadow: 0px 0 10px black;
+   
+   }
+   #barra-navegacion button{
+       left: 0%;
+       width: 140px;
+   }
+   #barra-navegacion span{
+    color: black;
+    font-weight: bold;    
+    position: absolute;
+    left: 30px;
+   }
+  
+  footer .login-x{
+      left: 1%;
+  }
+}
+
+
+
+
+
+@media (max-width: 1023px) {
+  .botones-perfil{
+      display: flex;
+  }
+  .logo-img{
+    display: none;
+}
+   body{
+       overflow-x: hidden;
+      
+   }
+   #android{
+       display: block;
+       position: relative;
+       
+   }
+   #android button{
+       position: absolute;
+       background: orangered;
+       width: 40px;
+       height: 40px;
+       border: none;
+       border-radius: 5px;
+       left: 1%;
+       top: 10px;
+       z-index: 3;
+   }
+   #android button:hover{
+       background: white;
+     
+   }
+   
+   #barra-navegacion{
+      display: none;
+  }
+  #logo button{
+      display: none;
+  }
+  #logo h1{
+      display: none;
+  }
+  .custom-switch{
+      position: absolute;
+      transform: translate(50%, -50%);
+      left: 40%;
+      top: 30%;
+      
+  }
+  footer{
+      width: 100%;
+      position: absolute;
+      top: 98%;
+  }
+  #container-perfil{
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    width: 90%;
+    height: 80vh;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 15px 15px 30px rgb(25,25,25),
+                -10px -10px 20px rgb(25,25,25);
+    animation: perfi 2s ease-in-out;    
+    z-index: 4;
+   
+   }
+   .foto{
+       position: relative;
+       width: 100%;
+       height: 45vh;
+       background: transparent;
+   }
+   .foto img{
+       position: absolute;
+       width: 100%;
+       height: 100%;
+   }
+   #barra-navegacion{
+      left: 0;
+      height: 100vh;
+      background: orangered;
+      top: 0;
+      z-index: 5;
+  }
+   #container-vista {
+      display: block;
+      z-index: 3;
+      width: 90%;
+       left: 5%;
+   }
+   #barra-navegacion button{
+       top: 10px;
+       left: 5%;
+   }
+   #barra-navegacion #cerrar-x{
+    display: flex;
+    background: orange;
+   filter: drop-shadow(0 0 20px white);
+    position: relative;
+    width: 135px;
+    padding: 5px;
+    left: 5%;
+    top: 40px;
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+    filter: drop-shadow(10px 0 10px black);
+    animation: animar 1s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+   }
+   #perfil-x{
+   display: flex;
+   background: white;
+   filter: drop-shadow(0 0 20px white);
+    position: relative;
+    width: 135px;
+    padding: 5px;
+    left: 5%;
+    top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+    filter: drop-shadow(10px 0 10px black);
+    animation: animar 1s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    color: black;
+   
+   }
+  #barra-navegacion #cerrar-x:hover{
+      background: white;
+  } 
+  #perfil-x:hover{
+      background: orangered;
+      color:white;
+  }
+  .blog{
+      display: none;
+  }
+
+}
+@media (min-width: 1024px){
+    #container-perfil{
+        display: block;
+    }
+   
+}
+
+@media(max-width: 620px){
+  
+   .inicio-padre .inicio h1{
+       font-size: 1.2em;
+       left: 3%;
+   }
+    .inicio-padre .inicio p{
+        font-size: 0.5em;
+        left: 3%;
+    }
+     .inicio-padre .inicio span{
+        left: 3%;
+        
+     }
+     .inicio-dos{
+         left: 3%;
+         
+     }
+     .resumen h1{
+         font-size: 0.8em;
+         top: 15px;
+     }
+     #regresar{
+         z-index: 3;
+         top: 80%;
+         left: 3%;
+     }
+     #siguiente{
+         top: 80%;
+         right: 10px;
+     }
+     .cargo-por{
+       top: 230px;
+     }
+     .nombre-por{
+         font-size: 1em;
+     }
+}
+
+
+@media(max-width: 434px){
+    .contacto h5{
+       font-size: 10px;
+    }
+    .contacto span{
+        font-size: 10px;
+    }
+}
+
+
+/* Mas de 1023px */
+
+ @media (max-width: 1023px) {
+     .login-x{
+        
+     display: none;
+     }
+    
+ }
+
+/* SERVICIOS ANDROID */
+
+@media(min-width: 700px){
+   .servicios {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+   
+     } 
+   .servicio {
+    margin-bottom: 20px;
+    width: 50%;
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+    }
+    .servicio h2{
+        font-size: 1.1em;
+    }
+   .servicios h3{
+    color: orangered;
+    font-size: 1.8rem;    
+    position: relative;
+    text-align: center;
+     }
+  
+}
+
+
+/* PORTAFOLIO ANDROID */
+
+@media (max-width: 600px) {
+    .portafolio button{
+        font-size: 10px;
+        
+    }
+  
+    
+}
+
+/* BLOG ANDROID */
+
+@media (max-width: 600px) {
+    .blog{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-gap: 10px; 
+        margin: auto;
+        position: relative;
+        
+    }
+    
+    .blog p{
+        margin: auto;
+        top: 50px;
+        left: 5%;
+        font-size: 1em;
+    }
+}

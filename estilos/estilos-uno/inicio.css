@@ -1,0 +1,470 @@
+/* 
+*/
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+body{
+  margin: 0;  
+  padding: 0;
+  background: white;
+  font-family: Arial, sans-serif, Helvetica,Verdana, roboto,open sans;
+  overflow: hidden;
+}
+
+.logo-img {
+    position: absolute;
+    width: 200px;
+    top: -60px;
+    left: 0;
+    height: auto;
+}
+#logo .custom-switch .switch {
+    display: flex;
+    width: 60px;
+    height: 30px;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 100px;
+    border: 2px solid black;
+    background: black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#logo .custom-switch .switch i {
+    color: yellow;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+#logo .custom-switch {
+    position: absolute;
+    right: 200px;
+    margin: 10px;
+    
+}
+#logo .custom-switch .switch span{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    z-index: 3;
+    border: 2px solid black;
+    filter: drop-shadow(0 0 10px yellow);
+    left: 0;
+}
+#logo .custom-switch .switch.active span{
+   position: absolute;
+    right: 1px;
+    left: auto;
+    
+}
+#logo .custom-switch .switch.active i{
+    color: white;
+}
+#logo .custom-switch .switch.active {
+    background-color: orangered; 
+    
+}
+#logo .custom-switch p{
+    position: absolute;
+    font-weight: bold;
+    top: 34px;
+    left: auto;
+    font-size: 9px;
+}
+body.active{
+    background: black;
+}
+
+#logo{
+   position: absolute;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    display: flex;
+    z-index: 1;
+    top: 10px;
+}
+
+#logo h1{
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    color:  #ff4900;
+}
+#logo button{
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    right: 50px;
+    top: 10px;
+    background:  #ff4900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    animation: verr 4s forwards;
+    
+}
+#logo button:hover{
+    background: black;
+}
+@keyframes verr {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        background: #00FCA8;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.1);
+        
+    }
+}
+button{
+   outline: none;
+    cursor: pointer;
+    
+}
+
+#barra-navegacion{
+   position: relative;
+    width: 200px;
+    height: 100vh;
+    background: transparent;
+    top: 0;
+   
+}
+#barra-navegacion button{
+    display: block;
+    position: relative;
+    width: 150px;
+    padding: 10px;
+    left: 15%;
+    top: 70px;
+    margin-bottom: 10px;
+    height: 60px;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid black;
+    outline: none;
+    filter: drop-shadow(10px 0 10px black);
+    animation: animar 1s ease-in-out;
+}
+@keyframes animar {
+    0%{
+       transform: translateY(300px); 
+       opacity: 0;
+       
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+#barra-navegacion i{
+    color: #ff4900;
+    position: relative;
+    left: -50px;
+    
+}
+#barra-navegacion span{
+    color: black;
+    font-weight: bold;    
+    position: absolute;
+    left: 40px;
+}
+#barra-navegacion button:hover{
+    background: #ff4900;
+   
+}
+#barra-navegacion button:hover i{
+    color: white;
+}
+#barra-navegacion button:hover span{
+    color: white;
+}
+
+/* FIN ESTILOS DE BAREA DE NAVEGACIÓN */
+
+/* ESTILOS DE PERFIL */
+
+#container-perfil{
+    position: absolute;
+    top: 70px;
+    left: 220px;
+    width: 300px;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 15px 15px 30px rgb(25,25,25),
+                -10px -10px 20px rgb(25,25,25);
+    animation: perfi 2s ease-in-out;            
+}
+.datos-perfil{
+    width: 100%;
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+@keyframes perfi {
+    0%{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.foto{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background: gray;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.foto img{
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+   
+}
+.datos-perfil h3{
+    position: relative;
+    text-align: center;
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.4rem;
+    top: 20px;
+    filter: drop-shadow(0 0px 10px rgba(0,0,0,0.9));
+}
+.datos-perfil span{
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+    top: 30px;
+    background: linear-gradient(to left,
+        #8f00ff,black,yellow,orangered);
+   background-clip: text;
+   color: transparent;
+    animation: espe 5s linear infinite;
+    font-size: 1.5em;
+    opacity: 0;
+}
+#mostrar-inicio{
+   opacity: 1;
+}
+.redes{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 40px;
+    width: 100%;
+    background: transparent;
+    height: 50px;
+}
+.redes a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    background: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #00000084;
+    cursor: pointer;
+}
+.redes a i{
+    text-align: center;
+    color: black;
+    position: relative;
+    margin: 11px 10px;
+}
+.redes a:hover{
+    transform: scaleX(1);
+    border-radius: 5px;
+    transition: all 0.5s ease-out;
+}
+.redes a:hover i{
+    color: white;
+}
+.redes a:nth-child(1):hover{
+    background: #10e700;
+}
+.redes a:nth-child(2):hover{
+    background: #0075e7;
+}
+.redes a:nth-child(3):hover{
+    background: #004fe7;
+}
+.redes a:nth-child(4):hover{
+    background: orangered;
+}
+
+#container-vista{
+    position: absolute;
+    width: 55%;
+    height: 80vh;
+    background: white;
+    top: 70px;
+    right: 70px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 20px;
+    animation: vista 1s ease-in-out;
+   box-shadow: 0px 0 30px black;
+   
+}
+#container-vista::-webkit-scrollbar{
+    width: 15px;
+    height: 10px;
+    
+}
+#container-vista::-webkit-scrollbar-track{
+    background: #05050543;
+    border-radius: 20px;
+    
+}
+#container-vista::-webkit-scrollbar-thumb{
+    background: #ff4900;
+    border-radius: 20px;
+    
+    
+}
+@keyframes vista {
+   0%{
+       transform: translateX(300px);
+       opacity: 0;
+   } 
+   100%{
+       opacity: 1;
+   }
+}
+.inicio{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: white;
+}
+.inicio h4{
+   font-weight: bold;
+    position: relative;
+    top: 50px;
+    left: 40px;
+    color:  #ff4900;
+    
+}
+.inicio h1{
+    position: relative;
+    font-size: 2.8em;
+    top: 60px;
+    left: 30px;
+    background: linear-gradient(to left,
+        #8f00ff,black,yellow,orangered);
+   background-clip: text;
+   color: transparent;
+    animation: espe 5s linear infinite;
+}
+@keyframes espe {
+   to{
+       background-position-x: 440px;
+   }
+}
+.inicio p{
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 70px;
+    left: 30px;
+}
+.inicio span{
+    color: gray;
+    position: relative;
+    top: 80px;
+    left: 30px;
+}
+.inicio-dos{
+    position: relative;
+    width: 90%;
+    height: 400px;
+    background: #ff4900;
+    top: 40px;
+    left: 30px;
+    border-radius: 10px;
+}
+.inicio-dos:hover{
+   width: 90%;
+   background: black;
+   filter: drop-shadow( 0 -10px 20px #ff7300);
+}
+.inicio-dos .datos a{
+    text-decoration: none;
+    
+}
+.inicio-dos:hover h2{
+    color: Orangered;
+}
+.descargar-cv{
+   position: relative;
+    width: auto;
+    padding: 10px;
+    background:  #ff4900;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    left: 30px;
+    
+}
+.descargar-cv:hover{
+    background: black;
+    filter: drop-shadow(0 0 20px #ff9315);
+    transition: 0.5s ease-in-out;
+    transform:scale(1.2);
+}
+.inicio-dos h2{
+   position: relative;
+    color: black;
+    top: 20px;
+    left: 40px;
+}
+.inicio-dos span{
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+.inicio-tres{
+    width: 100%;
+    height: 300px;
+    position:relative;
+    background: transparent;
+}
+#android{
+    position: absolute;
+    display:none;
+}
+
+#barra-navegacion #cerrar-x{
+       display: none;
+   }
+   
+ #perfil-x{
+       display: none;
+   }
+ 

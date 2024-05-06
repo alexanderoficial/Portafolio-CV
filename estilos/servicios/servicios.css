@@ -1,0 +1,127 @@
+.servicios {
+    background-color: orange;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+}
+
+.servicio {
+    width: 100%;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    animation: ser 2s forwards;
+    margin: 10px;
+    filter: drop-shadow(0 0 10px black);
+}
+@keyframes ser {
+    10%{
+        transform: translateX(300px);
+        background: Orangered;
+    }
+    20%{
+        transform: translateY(-300px);
+        background: white;
+    }
+    40%{
+        transform: translateY(300px);
+        background: black;
+    }
+    60%{
+        background: #8f00ff;
+    }
+   
+}
+
+.servicio a {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 5px;
+    background: orangered;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    cursor: pointer;
+}
+.servicio a:hover{
+    background: white;
+    color: black;
+    filter: drop-shadow(0 0 10px orangered);
+    
+}
+
+.servicio:hover{
+    filter: drop-shadow(0 0 10px white);
+    background: orangered;
+    cursor: pointer;
+    height: auto;
+    transition: 1s ease-out;
+}
+
+.servicio:hover p{
+    color: white;
+}
+.servicios h3{
+   position: relative;
+    color: orangered;
+    font-size: 1.6rem;
+    margin: 20px;
+    text-align: center;
+   background: white;
+   border-radius: 5px;
+}
+.servicio h2{
+    font-size: 1rem;
+    margin: 10px;
+    color: orangered;
+    position: relative;
+    top: 10px;
+    background: linear-gradient(to left,
+        violet,indigo,blue,green,yellow,orangered);
+   background-clip: text;
+   color: transparent;
+   text-align: center;
+   animation: colores 5s linear infinite;
+}
+@keyframes colores {
+    to{
+        background-position-x: 350px;
+    }
+}
+.servicio p {
+    font-size: 1rem;
+    color: #666;
+    margin: 20px;
+}
+
+.servicio ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 30px;
+    color: black;
+}
+
+.servicio ul li::before {
+    content: "•";
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    
+}
+.servicio-tex{
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+

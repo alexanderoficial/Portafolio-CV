@@ -1,0 +1,92 @@
+body{
+    background:  #575757;
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    top: 80px;
+}
+.contenedor img{
+    width: 43%;
+    height: 280px;
+    padding: 10px 0;
+    position: relative;
+    left: 1%;
+    
+    
+}
+.contenedor button{
+    diplay: flex;
+    position: relative;
+    top: -130px;
+    left: -25%;
+    font-size: 20px;
+    border:none;
+    background: #7aff00;
+    border-radius: 5px;
+    
+}
+.logo{
+    position: relative;
+    left: 10px;
+    top: 0;
+    color: #00eaff;
+    
+}
+nav {
+  background: white; 
+  padding: 10px 0;
+  border: 1px solid #00eaff;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin: 0 20px; 
+  background: transparent;
+  width: 200px;
+  height: 40px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #000000; /* Color de texto de los enlaces */
+  font-weight: bold;
+  
+}
+nav:hover{
+    background: #00ff03;
+    border-radius: 5px;
+  border: 1px solid white;
+  
+}
+nav ul li a:hover{
+    color: white;
+}
+.texto-paginas{
+    color: #7aff00;
+    position: relative;
+    left: 20%;
+    font-size: 40px;
+    
+}
+.texto-creados{
+    color: white;
+    position: relative;
+    left: 29%;
+}
+.puntostres{
+    display: none;
+}

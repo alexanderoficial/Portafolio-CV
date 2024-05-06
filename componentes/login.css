@@ -1,0 +1,179 @@
+:root{
+    --background-hover: #11ff00;
+    --color:white;
+    --background: yellow;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow:hidden;
+  background:#000;
+}
+
+
+.login-container {
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid yellow;
+ z-index: 4;
+}
+
+h2 {
+  text-align: center;
+  color: yellow;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid yellow;
+  border-radius: 4px;
+  color: black;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  animation: forwards solbot 5s linear;
+}
+
+@keyframes solbot{
+    0%{
+        transform: traslate(0);
+        opacity:0;
+    }
+    100%{
+        transform: traslateX(0);
+        opacity:1;
+    }
+}
+.login-container a{
+    font-size:10px;
+    position: relative;
+    margin-left: 30px;
+    color: var(--color);
+}
+button:hover {
+  background-color: var(--background-hover);
+}
+
+
+section{
+   position: absolute; 
+  height:100%;
+  width:100%;
+  z-index:1;
+}
+span{
+  border-radius:50%;
+  pointer-events:none;
+  position:absolute;
+  background:white;
+  animation: animate 5s linear infinite;
+  z-index:1;
+}
+.sol{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top:40%;
+    left:5%;
+    border-radius: 50%;
+    background: transparent;
+    z-index:1;
+    
+}
+.sol::after{
+  content:"";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left:0;
+    border-radius: 50%;
+    background: yellow;
+    z-index:1;   
+    box-shadow: 0px 0px 20px yellow;
+    animation: forwards sol 5s linear;
+}
+.sol::before{
+    content:"";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:0;
+    left: 20%;
+    border-radius: 50%;
+    background: black;
+    z-index: 2;
+    animation: forwards soll 10s linear;
+}
+@keyframes soll{
+    0%{
+        transform: traslate(0);
+        opacity:0.5;
+    }
+    100%{
+        transform: traslateX(0);
+        opacity:0;
+    }
+}
+@keyframes sol{
+    0%{
+        transform:scale(1);
+         opacity:0.5;
+    }
+    100%{
+        transform:scale(1.4);
+    }
+}
+@keyframes animate{
+  0%{
+    transform:scale(0) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  10%{
+        opacity:1; 
+  }
+  90%{
+        opacity:1; 
+  }
+  100%{
+    transform:scale(1) translateX(-4000%) rotate(360deg);
+        opacity:1; 
+  }
+}
+
+
+@media (max-width: 1023px){
+    .sol{
+        top: 10%;
+        position: absolute;
+        left: 46%;
+    }
+}

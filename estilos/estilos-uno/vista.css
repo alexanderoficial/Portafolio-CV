@@ -1,0 +1,508 @@
+/* #ff4900  */
+.resumen{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;  
+    margin-bottom: 20px; 
+    display: none;
+ }
+
+.resumen h3 {
+    color: orangered;
+    position: relative;
+    box-shadow: 0 0 20px black;
+    width: 102px;
+    border-radius: 2px;
+}
+
+.resumen h1 {
+    color: black;
+    margin-top: 10px;
+    position: relative;
+    font-size: 1.5em;
+    background: linear-gradient(to left,
+        orange,black,#a400ff,orangered);
+   background-clip: text;
+   color: transparent;
+   
+ 
+}
+.resumen h2{
+    color: black;
+    font-size: 2em;
+    padding: 30px 30px 0 0;
+  
+}
+.resumen i{
+    color: #ff4900;
+}
+
+.habilidades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.habilidades ul li {
+    margin-bottom: 5px;
+    padding: 10px 10px 0 0;
+    font-weight: bold;
+    color: grey;
+}
+
+.educacion p {
+    margin-bottom: 5px;
+    color: Orangered;
+    font-weight: bold;
+}
+
+.experiencia p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: Orangered;
+}
+.experiencia li{
+    color: grey;
+    margin: 5px 10px;
+}
+
+
+.idiomas p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: Orangered;
+}
+.certi{
+    width: 70%;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    background: orangered;
+    margin: 20px 0;
+}   
+.certi img{
+    width: 98%;
+    height: 290px;
+    position: absolute;
+    margin: 5px 5px;
+    border-radius: 10px;
+}
+
+.certificaciones p {
+    position: relative;
+    top: -15px;
+    left: 10px;
+    font-weight: bold;
+    color: black;
+}
+ .portafolio{
+     display: none;
+ }
+ .servicios{
+     display: none;
+ }
+ .testimonios{
+     width: 100%;
+     height: 70vh;
+     background: #b3c6eefd;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     align-content: center;     
+     top: 0;
+     display: none;
+ }
+ .contenedor-tes{
+    position: absolute;
+     width: 100%;
+     height: 50vh;
+     background: transparent;
+     top: 50%;
+     z-index: 1;
+ }
+ .nombre-por{
+     position: absolute;
+     color: orangered;
+     top: 190px;
+     left: 50%;
+      transform: translate(-50%, -50%);
+ }
+ .cargo-por{
+     position: absolute;
+     top: 220px;
+     transform: translate(-50%, -50%);
+     left: 50%;
+ }
+ #user-visible{
+     display: flex;
+     
+ }
+ .user{
+     position: relative;
+     display: none;
+ }
+ .user img{
+     position: absolute;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     transform: translate(-50%, -50%);
+     left: 50%;
+     top: 50%;
+     box-shadow: 0 0 20px black;
+     animation: uno 1s ease-in-out;
+    
+ }
+ @keyframes uno {
+     0%{
+       transform: translateX(300px);
+       top: -100px;
+        opacity: 0;
+     }
+     100%{
+         
+         opacity: 1;
+     }
+   
+ }
+ .user h6{
+     position: absolute;
+     font-weight: bold;
+     font-size: 1em;
+     top: 150px;
+     left: 50%;
+     text-align: center;
+     transform: translate(-50%, -50%);
+     color: black;
+     
+ }
+#regresar{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+}
+#siguiente{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    z-index: 2;
+}
+.testimonios button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: orangered;
+    border: 2px solid #575757ef;
+    box-shadow: 0px 10px 10px gray;
+    transition: all 0.3s ease-out;
+}
+.testimonios button:hover{
+    background: white;
+}
+#siguiente i {
+    color: black;
+    transform: rotate(90deg);
+}
+#regresar i{
+    color: black;
+    transform: rotate(-90deg);
+}
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f2f2f2;
+    display: none;
+}
+
+.informacion-personal {
+    flex: 1;
+    margin-right: 20px;
+    animation: contac 1s ease;
+}
+@keyframes contac {
+    0%{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.informacion-personal h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.informacion-personal div {
+    margin-bottom: 5px;
+}
+
+.informacion-personal span {
+    font-weight: bold;
+}
+
+.acciones-gmail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background: orangered;
+    border: 2px solid white;
+    filter: drop-shadow(0 0 30px orangered);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    animation: contac 1s ease;
+}
+.comentarios{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    border: 2px solid orangered;
+    background: white;
+    margin-top: 20px;
+}
+#comentario{
+    position: relative;
+    width: 80%;
+    height: 70px;
+    max-width: 280px;
+    margin: auto;
+    border: 2px solid orangered;
+    border-radius: 3px;
+  
+}
+.comentarios button{
+   margin: 20px auto;
+   min-width: 100px;
+   background: orangered;
+   cursor: pointer;
+   padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.acciones-gmail h4{
+    position: relative;
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.inicio-sesion {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 280px;
+    border-radius: 5px;
+    background: url('1.jpg');
+    background-size: cover;
+    border: 2px solid black;
+    margin: 20px 0;
+   animation: contac 1s ease;
+}
+.inicio-box{
+    width: 50%;
+    height: 250px;
+    border: 2px solid orangered;
+    margin: auto;
+    border-radius: 10px;
+    background: #0000008e;
+    position: relative;
+    top: 10px;
+}
+.inicio-sesion button {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    position: relative;
+    max-width: 200px;
+   min-width: 20px;
+}
+.inicio-sesion h2{
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.inicio-sesion button:hover {
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    max-width: 60%;
+    margin: auto;
+    min-width: 50px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid orangered;
+}
+.comentarios {
+    margin-bottom: 20px;
+}
+
+.comentarios h2 {
+    margin-bottom: 10px;
+}
+
+.comentarios form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"], input[type="text"]{
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+}
+
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border: 2px solid orangered;
+}
+
+
+
+button[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+footer{
+    position: relative;
+    z-index: 3;
+}
+.login-x{
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    font-size: 12px;
+    width: 100px;
+    color: white;
+    background:  #ff1f00;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    text-decoration: none;
+    animation: verr 4s forwards;
+    justify-content: center;
+}
+.login-x:hover{
+    background: rgb(8, 8, 8);
+}
+footer .priva-x{
+    position: absolute;
+    left: 10%;
+    font-size:10px;
+    top: -40px;
+    color: Orangered;
+}
+footer .ter-x{
+    position: absolute;
+    right: 10%;
+    font-size:10px;
+    top: -40px;
+    color: Orangered;
+}
+footer h6{
+    position: relative;
+    text-align: center;
+    top: -20px;
+    color: white;
+    background: grey;
+    
+}
+.botones-perfil{
+   position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    background: transparent;
+    margin: 20px 0;
+    z-index: 4;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+#container-perfil .botones-perfil a{
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    text-decoration: none;
+    padding: 0;
+    margin: 10px 20px;
+    height: 20px;
+}
+.botones-perfil button:hover{
+    background: black;
+}
+.botones-perfil button{
+ position: relative;
+  background: orangered;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 10px;
+  padding: 0;
+}
+
+.contacto h3{
+    color: orangered;
+}
+
+.contacto h5{
+        color: black;
+ }
+    .contacto span{
+        color: orangered;
+}
+.mapa-ubicacion{
+    position: relative;
+    width: 100%;
+    height: 330px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    left: -10px;
+    margin: 10px;
+}
+.mapa-ubicacion h3{
+    color: black;
+    
+}
+.mapa-ubicacion img{
+   position: absolute;
+   width: 100%;
+   height: 300px;
+   margin: 30px auto;
+}
+ .blog{
+     display: flex;
+ }
