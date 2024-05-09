@@ -403,8 +403,8 @@ button{
     position: relative;
     width: 90%;
     height: 400px;
-    background: #ff4900;
-    top: 40px;
+    background: orangered;
+    top: 10px;
     left: 30px;
     border-radius: 10px;
 }
@@ -421,7 +421,7 @@ button{
     color: Orangered;
 }
 .descargar-cv{
-   position: relative;
+   position: absolute;
     width: auto;
     padding: 10px;
     background:  #ff4900;
@@ -429,7 +429,8 @@ button{
     border: none;
     color: white;
     left: 30px;
-    
+    top: auto;
+    display: none;
 }
 .descargar-cv:hover{
     background: black;
