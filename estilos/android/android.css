@@ -191,6 +191,12 @@
   .blog{
       display: none;
   }
+     .descargar-cv{
+    display: flex;
+    top: 0%;
+    margin: 10px 40px;
+}
+
 
 }
 @media (min-width: 1024px){
@@ -213,6 +219,9 @@
      .inicio-padre .inicio span{
         left: 3%;
         
+     }
+    .inicio-padre .inicio h4{
+        left: 2%;
      }
      .inicio-dos{
          left: 3%;
@@ -250,14 +259,22 @@
 }
 
 
-/* Mas de 1023px */
+/* Menos de 1023px */
 
  @media (max-width: 1023px) {
      .login-x{
         
      display: none;
      }
-    
+     .inicio-dos{
+        position: relative;
+        width: 90%;
+        height: 400px;
+        background: white;
+        top: 40px;
+        left: 30px;
+        border-radius: 10px;
+    }
  }
 
 /* SERVICIOS ANDROID */
