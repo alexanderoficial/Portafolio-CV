@@ -404,7 +404,7 @@ button{
     width: 90%;
     height: 400px;
     background: orangered;
-    top: 10px;
+    top:10px;
     left: 30px;
     border-radius: 10px;
 }
@@ -468,4 +468,13 @@ button{
  #perfil-x{
        display: none;
    }
+.inicio-dos{
+    position: relative;
+    width: 90%;
+    height: 400px;
+    background: orangered;
+    top:10px;
+    left: 30px;
+    border-radius: 10px;
+}
  
