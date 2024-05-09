@@ -399,15 +399,7 @@ button{
     top: 80px;
     left: 30px;
 }
-.inicio-dos{
-    position: relative;
-    width: 90%;
-    height: 400px;
-    background: orangered;
-    top:10px;
-    left: 30px;
-    border-radius: 10px;
-}
+
 .inicio-dos:hover{
    width: 90%;
    background: black;
@@ -473,7 +465,7 @@ button{
     width: 90%;
     height: 400px;
     background: orangered;
-    top:10px;
+    top: -40px;
     left: 30px;
     border-radius: 10px;
 }
