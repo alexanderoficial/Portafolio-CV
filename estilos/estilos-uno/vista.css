@@ -76,8 +76,8 @@
     color: Orangered;
 }
 .certi{
-    width: 70%;
-    height: 300px;
+    width: 90%;
+    height: 410px;
     position: relative;
     border-radius: 10px;
     background: orangered;
@@ -85,7 +85,7 @@
 }   
 .certi img{
     width: 98%;
-    height: 290px;
+    height: 400px;
     position: absolute;
     margin: 5px 5px;
     border-radius: 10px;
