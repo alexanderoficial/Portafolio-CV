@@ -386,18 +386,19 @@ button{
        background-position-x: 440px;
    }
 }
+.text-contenedor{
+    width: 90%;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 80px;
+    margin: 0 30px;
+   }
+   
 .inicio p{
     font-weight: bold;
     color: black;
     position: relative;
-    top: 70px;
-    left: 30px;
-}
-.inicio span{
-    color: gray;
-    position: relative;
-    top: 80px;
-    left: 30px;
 }
 
 .inicio-dos:hover{
@@ -469,4 +470,66 @@ button{
     left: 30px;
     border-radius: 10px;
 }
+ /* ESTILOS DE BARRA DE PROGRESO */
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto 30px;
+}
+
+.progress {
+    background-color: rgb(255, 254, 254);
+    height: 10px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    margin: 10px;
+    overflow: hidden; 
+    position: relative;
+    top: 10px;
+   
+}
+
+.progress::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: var(--progress);
+    background-color: orangered;
+    position: absolute; 
+    border-radius: 50px;
+    left: -100%; 
+    animation: cargar 2.3s ease-in forwards;
+}
+
+@keyframes cargar {
+    0% {
+        left: -100%; 
+    }
+    100% {
+        left: 0;
+    }
+}
+.name-por{
+ color: aliceblue;
+ top: 10px;
+ font-weight: bold;
+ position: relative;
+ left: 10px;
  
+
+}
+.numero-pro{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 90%;
+    top: -40px;
+}
+
