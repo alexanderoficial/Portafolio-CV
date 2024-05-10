@@ -506,3 +506,53 @@ footer h6{
  .blog{
      display: flex;
  }
+
+
+/* ESTILOS DE LAS IMAGENES DE RESUMEN */
+
+.container-imagenes {
+    display: flex;
+    overflow: hidden;
+    perspective: 1000px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 20px auto;
+    background-color: orangered;
+  }
+  
+  .imagen-wrapper {
+    margin: 10px;
+    transform-style: preserve-3d; 
+    animation: spines 7s linear infinite; 
+  }
+  
+  @keyframes spines {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg); 
+    }
+  }
+  
+  .imagen-wrapper img {
+    width: 200px; 
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    filter: drop-shadow(-5px 10px 30px rgb(34, 255, 152));
+  }
+  
+  .imagen-title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 12px; 
+  }
+  
+
