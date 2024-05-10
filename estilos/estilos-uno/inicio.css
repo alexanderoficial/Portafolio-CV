@@ -532,4 +532,14 @@ button{
     left: 90%;
     top: -40px;
 }
-
+.texto-progreso{
+    position: relative;
+    text-align: center;
+    top: -40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #00FCA8;
+    font-size: 2em;
+}
+.texto-progreso span{
+    color: orangered;
+}
