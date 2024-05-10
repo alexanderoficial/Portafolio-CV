@@ -259,24 +259,6 @@
 }
 
 
-/* Menos de 1023px */
-
- @media (max-width: 1023px) {
-     .login-x{
-        
-     display: none;
-     }
-     .inicio-dos{
-        position: relative;
-        width: 90%;
-        height: 400px;
-        background: orangered;
-        top: 40px;
-        left: 30px;
-        border-radius: 10px;
-    }
- }
-
 /* SERVICIOS ANDROID */
 
 @media(min-width: 700px){
@@ -340,3 +322,18 @@
         font-size: 1em;
     }
 }
+ @media (max-width: 1023px) {
+     .login-x{
+        
+     display: none;
+     }
+     .inicio-dos{
+        position: relative;
+        width: 90%;
+        height: 400px;
+        background: rangered;
+        top: 40px;
+        left: 30px;
+        border-radius: 10px;
+    }
+ }
