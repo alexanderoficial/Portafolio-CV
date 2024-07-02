@@ -12,7 +12,70 @@ body{
   font-family: Arial, sans-serif, Helvetica,Verdana, roboto,open sans;
   overflow: hidden;
 }
+#padre-modal{
+    position: absolute;
+    font-family: Arial, sans-serif;
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    
+}
+#padre-modal .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 20px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.603); 
+    justify-content: center; 
+    align-items: center; 
+}
 
+#padre-modal .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px; 
+    border-radius: 10px;
+    box-shadow: 0 0px 10px 0 rgb(255, 248, 248);
+    filter: drop-shadow( 0 0 10px rgb(0, 0, 0));
+}
+#padre-modal .modal-content p{
+    font: icon;
+    font: message-box;
+}
+#padre-modal button {
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+    padding: 10px 22px;
+    font-size: 15px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#padre-modal span{
+    color: orangered;
+    font-weight: bold;
+}
+#padre-modal h2{
+    color: orangered;
+    position: relative;
+    text-align: center;
+    top: -10px;
+}
+#padre-modal button:hover {
+    background-color: #000000;
+    transform: scale(1.1);
+    color: rgb(252, 252, 252);
+}
 .logo-img {
     position: absolute;
     width: 200px;
